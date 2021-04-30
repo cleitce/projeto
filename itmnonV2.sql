@@ -41,6 +41,15 @@ CREATE TABLE itmn_usuario (
 
 insert into itmn_usuario values(
 null,
+'cleitce@gmail.com',
+'https://site.com/foto.jpg',
+'Cleiton Silva',
+'cleitce',
+'janela01'
+);
+
+insert into itmn_usuario values(
+null,
 'emerson@paduan.pro.br',
 'https://hennesseyonline.com/wp-content/uploads/2015/05/staff-placeholder-male.jpg',
 'Emerson Paduan',

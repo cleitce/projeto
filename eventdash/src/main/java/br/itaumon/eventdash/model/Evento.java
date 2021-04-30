@@ -10,8 +10,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-/* import javax.persistence.Temporal;
-import javax.persistence.TemporalType; */
+/* 
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType; 
+*/
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -28,12 +30,13 @@ public class Evento {
 	//@Temporal(TemporalType.DATE)
 	//private Date data_evt;
 	private LocalDate data_evt;
+	//private LocalDate dataevt;
 
-/*     @Column(name="id_alarme")
+     @Column(name="id_alarme")
 	private int id_alarme;
 
     @Column(name="id_equip")
-	private int id_equip; */
+	private int id_equip; 
 	
 	
 	@JsonIgnoreProperties("eventos")
@@ -54,10 +57,12 @@ public class Evento {
 
 	public LocalDate getData_evt() {
 		return data_evt;
+		//return dataevt;
 	}
 
 	public void setData_evt(LocalDate data) {
 		this.data_evt = data;
+		//this.dataevt = data;
 	}
 
 	
@@ -99,6 +104,7 @@ public class Evento {
 		super();
 		this.num_seq = numseq;
 		this.data_evt = data;
+		//this.dataevt = data;
         this.alarme = alarme;
         this.equipamento = equipamento;
 	}
